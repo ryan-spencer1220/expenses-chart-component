@@ -50,6 +50,14 @@ window.onload = function () {
       ],
     },
     options: {
+      tooltips: {
+        displayColors: false,
+        callbacks: {
+          title: function (tooltipItem, data) {
+            return tooltipItem.yLabel;
+          },
+        },
+      },
       legend: {
         display: false,
       },
