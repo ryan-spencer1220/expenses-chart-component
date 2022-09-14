@@ -18,7 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="scripts.js"></script>
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
@@ -32,6 +34,7 @@
       </div>
       <div class="card-body">
         <h2 id="spending">Spending - Last 7 days</h2>
+        <canvas id="myChart" width="450" height="250"></canvas>
         <hr class="rounded" />
         <div class="monthly-total">
           <div>
